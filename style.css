@@ -192,7 +192,7 @@ ul li a{
 	color: #FF9933;
 	text-decoration: none;
 	font-weight: bold;
-	text-transform: capitalize;
+
 }
 .education{
 	width: 50%;
@@ -762,14 +762,15 @@ textarea.input {
 
   .skills h6,
   .education h6 {
-    font-size: 30px; 
+    font-size: 40px; 
     text-align: center;
   }
 
   ul li {
     font-size: 30px;
     padding: 15px 0; 
-    text-align: center;
+   
+	
   }
 
   .btn {
