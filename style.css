@@ -45,16 +45,16 @@ header ul{
     position: relative;
     display: flex;
     justify-content: right;
-
+    
    }
 header ul li{
-	padding-right: 2%;
+	padding-right: 0.5px;
     position: relative;
     list-style: none;
     list-style-type: none;
 	display: inline-block;
 	font-size: 18px;
-	text-align: center;
+
  }
 header ul li a{
     position: relative;
@@ -62,6 +62,7 @@ header ul li a{
     transition: 0.5s;
     color: #151515;
 	  text-decoration: none;
+    
 }
 header ul li a:hover{
 		color: #FFA500;
@@ -624,3 +625,167 @@ textarea.input {
 .centered span{
 	color: #ff9500;
 }
+
+
+
+/* Add this CSS inside a media query for screens with a maximum width of 480px (typical for mobile devices) */
+
+@media (max-width: 480px) {
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+
+  header {
+    padding: 10px 20px; 
+  }
+
+  header .logo {
+    font-size: 30px; 
+  }
+
+  header ul {
+    
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    background-color: #151515;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; 
+        
+    }
+
+  header.Sticky ul {
+    opacity: 1; 
+    pointer-events: auto; 
+  }
+
+  header ul li {
+    padding: 10px 0; 
+    font-size: 10px;
+    
+  }
+
+  .banner {
+    min-height: 100vh; 
+    background-size: cover;
+    background-position: 30% ;
+  
+  }
+
+  .content {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .content h1 {
+    font-size: 30px; 
+  }
+
+  .content h3 {
+    font-size: 18px; 
+  }
+
+  .content h4 {
+    font-size: 18px; 
+  }
+
+  .newslatter {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .newslatter .button-one {
+    font-size: 14px; 
+    padding: 5px 15px; 
+  }
+
+  .about img {
+    width: 50%; 
+  }
+
+  .about-text {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-text h2 {
+    font-size: 30px; 
+  }
+
+  .about-text h5 {
+    font-size: 18px; 
+  }
+
+  .about-text p {
+    font-size: 16px; 
+    line-height: 19px;
+  }
+
+  .container {
+    flex-direction: column; 
+  }
+
+  .skills,
+  .education {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .skills h6,
+  .education h6 {
+    font-size: 24px; 
+    text-align: center;
+  }
+
+  ul li {
+    padding: 10px 0; 
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 16px; 
+    padding: 10px 20px; 
+  }
+
+  .contact-info:before {
+    display: none; 
+  }
+
+  .square,
+  .big-circle {
+    display: none; 
+  }
+
+  .text,
+  .information,
+  .social-media p {
+    font-size: 14px; 
+  }
+
+  .title {
+    font-size: 20px; 
+  }
+
+  .social-icons a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .icon {
+    width: 23px;
+  }
+}
+
+
+
+
+
