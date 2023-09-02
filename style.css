@@ -647,6 +647,7 @@ textarea.input {
   }
 
   header ul {
+    
     position: absolute;
     top: 10px;
     left: 0;
@@ -658,7 +659,9 @@ textarea.input {
         
     }
 
-
+  header.Sticky {
+    padding: 0 0 0 0 ;
+  }
   header.Sticky ul {
     padding-top: 3%;
        opacity: 1; 
@@ -668,7 +671,7 @@ textarea.input {
   header ul li {
     margin-top: 2%;
     padding: 5px 0; 
-    font-size: 15px;
+    font-size: 10px;
     
   }
 
