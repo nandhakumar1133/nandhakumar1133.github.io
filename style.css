@@ -647,7 +647,6 @@ textarea.input {
   }
 
   header ul {
-    
     position: absolute;
     top: 10px;
     left: 0;
@@ -659,21 +658,15 @@ textarea.input {
         
     }
 
-  header.Sticky {
-    padding-top: 1px;
-    opacity: 1; 
-    pointer-events: auto; 
-  }
+
   header.Sticky ul {
-    padding-top: 15%;
-    padding-right: 0;
-    padding-left: 0;
-     opacity: 1; 
+    padding-top: 3%;
+       opacity: 1; 
     pointer-events: auto; 
   }
 
   header ul li {
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 5px 0; 
     font-size: 15px;
     
