@@ -678,6 +678,10 @@ textarea.input {
   }
 
   .content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
     text-align: center;
     top: 50%;
     left: 50%;
@@ -784,6 +788,7 @@ textarea.input {
     width: 23px;
   }
 }
+
 
 
 
