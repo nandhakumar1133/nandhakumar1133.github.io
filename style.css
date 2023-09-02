@@ -643,7 +643,7 @@ textarea.input {
   }
 
   header .logo {
-    font-size: 30px; 
+    font-size: 25px; 
   }
 
   header ul {
@@ -659,14 +659,20 @@ textarea.input {
         
     }
 
-  header.Sticky ul {
+  header.Sticky {
+    padding-top: 1px;
     opacity: 1; 
+    pointer-events: auto; 
+  }
+  header.Sticky ul {
+    padding-top: 15%;
+     opacity: 1; 
     pointer-events: auto; 
   }
 
   header ul li {
     padding: 10px 0; 
-    font-size: 10px;
+    font-size: 20px;
     
   }
 
@@ -678,10 +684,6 @@ textarea.input {
   }
 
   .content {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh;
     text-align: center;
     top: 50%;
     left: 50%;
@@ -709,6 +711,11 @@ textarea.input {
     font-size: 14px; 
     padding: 5px 15px; 
   }
+  .about{
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+  }
 
   .about img {
     width: 50%; 
@@ -734,6 +741,9 @@ textarea.input {
   }
 
   .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
     flex-direction: column; 
   }
 
@@ -742,6 +752,13 @@ textarea.input {
     width: 100%;
     padding: 20px;
   }
+  .skills{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+  }
+ 
 
   .skills h6,
   .education h6 {
@@ -788,7 +805,6 @@ textarea.input {
     width: 23px;
   }
 }
-
 
 
 
