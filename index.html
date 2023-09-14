@@ -17,15 +17,30 @@
   <!--My portfolio start-->
 
 	<header>
-    	<a href="#" class="logo">Portfo<span>lio</span></a>
-      		<ul>
-            	<li><a href="#home_"><i class="fa-solid fa-house"></i> Home</a></li>
-             	<li><a href="#about_"><i class="fa-solid fa-address-card"></i> About_Me</a></li>
-             	<li><a href="#skills_"><i class="fa-solid fa-brain"></i> Skills</a></li>
-             	<li><a href="#education_"><i class="fa-solid fa-laptop-code"></i> Education</a></li>
-             	<li><a href="#contact_"><i class="fa-solid fa-handshake"></i> Contact</a></li>
-      		</ul>
-    </header>
+		<nav class="navbar">
+			<a href="#" class="logo">Portfo<span>lio</span></a>
+				  <ul class="nav-links">
+					<li><a href="#home_"><i class="fa-solid fa-house"></i> Home</a></li>
+					 <li><a href="#about_"><i class="fa-solid fa-address-card"></i> About_Me</a></li>
+					 <li><a href="#skills_"><i class="fa-solid fa-brain"></i> Skills</a></li>
+					 <li><a href="#education_"><i class="fa-solid fa-laptop-code"></i> Education</a></li>
+					 <li><a href="#contact_"><i class="fa-solid fa-handshake"></i> Contact</a></li>
+				  </ul>
+				  <div class="hamburger-menu">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+			</nav>	
+		</header>
+		<script>
+			const hamburgerMenu = document.querySelector('.hamburger-menu');
+			const navLinks = document.querySelector('.nav-links');
+	  
+			hamburgerMenu.addEventListener('click', () => {
+				navLinks.classList.toggle('active');
+			});
+		</script>
     <section class="banner" id="home_"></section>
     	<script type="text/javascript">window.addEventListener("scroll", function(){ var header = document.querySelector("header");header.classList.toggle("Sticky", window.scrollY > 0);});
 		</script>
@@ -59,7 +74,7 @@
 
 	<div class="container">
 		<div class="skills" id="skills_">
-			<h6><i class="fa-solid fa-code" style="font-size: 20px; color: #fff;"></i> Skills</h6>
+			<h2><i class="fa-solid fa-code" style="font-size: 20px; color: #fff;"></i> Skills</h2>
 				<ul>
 					<li><a href="#"><i class="fa-solid fa-photo-film"></i>   Adobe Photoshop <i class="fa-solid fa-star" style="color: #EEF4ED"></i><i class="fa-solid fa-star" style="color: #EEF4ED"></i><i class="fa-solid fa-star" style="color: #EEF4ED"></i><i class="fa-regular fa-star" style="color: #EEF4ED"></i><i class="fa-regular fa-star" style="color: #EEF4ED"></i></i></a></li>
 					<li><a href="#"><i class="fa-brands fa-figma">   Figma <i class="fa-solid fa-star" style="color: #EEF4ED"></i><i class="fa-solid fa-star" style="color: #EEF4ED"></i><i class="fa-solid fa-star" style="color: #EEF4ED"></i><i class="fa-solid fa-star" style="color: #EEF4ED"></i><i class="fa-regular fa-star" style="color: #EEF4ED"></i></i></a></li>
@@ -75,9 +90,11 @@
 				<p>Rathnavel Subramaniam (RVS) College of Arts and Science</p>
 				<p>Bharathiyar University</p>
 				<p>2017 - 2020</p> 
-				<p>___________________________________________________</p>
+				<p>_____________________________________________________________________________________________</p>
 					<div class="experience">
 						<h6><i class="fa-solid fa-person-digging"></i> Experience</h6>
+						<h4>TÜV SÜD South Asia - Tirupur</h4> <p>Registration Coordinator, Feb-2021 to Jan 2022</p>  <br>   
+						<h4>Focus Edumatics Pvt Ltd - Coimbatore</h4> <p>Online Tutor, Nov-2022 to July 2023 </p>
 					</div>
 			</div>
 	</div>

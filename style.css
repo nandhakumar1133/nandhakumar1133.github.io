@@ -1,34 +1,37 @@
-*{
-	padding: 0;
-	margin: 0; 
-	font-family: 'Josefin Sans', sans-serif;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
 }
-body{
-    background: #000;
-    min-height: 200vh;
+
+body {
+  background: #000;
+  min-height: 200vh;
 }
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transition: 0.6s;
-    padding: 20px 50px;
-    z-index: 10000;
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-header.Sticky{
-    height: 12%;
-    padding: 2px 150px;
-    background: #151515;
-    align-items: center;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
 header .logo{
-    position: relative;
-    text-decoration: none;
-    transform: translate(0 0 50% 5%);
+  position: relative;
+  text-decoration: none;
+  transform: translate(0 0 50% 5%);
 	font-size: 50px;
 	-webkit-text-stroke: .5px #EEF4ED;		
 	color: transparent;
@@ -38,74 +41,78 @@ header .logo{
 	background-position: 500px 0;
 	letter-spacing: 3px;
 }
+
 span{
 	color: #FFA500;
 }
-header ul{
-    position: relative;
-    display: flex;
-    justify-content: right;
-    
-   }
-header ul li{
-	padding-right: 0.5px;
-    position: relative;
-    list-style: none;
-    list-style-type: none;
-	display: inline-block;
-	font-size: 18px;
 
- }
-header ul li a{
-    position: relative;
-    letter-spacing: 1px;
-    transition: 0.5s;
-    color: #151515;
-	  text-decoration: none;
-    
+.nav-links {
+  list-style: none;
+  display: flex;
 }
-header ul li a:hover{
-		color: #FFA500;
-	transition: .5s;
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff6600;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #FFA500;
+  margin: 3px 0;
 }
 
 .banner{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(mynewimage.jpg);
-    background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(mynewimage.jpg);
+  background-size: cover;
 }
-header.Sticky .logo,
-header.Sticky ul li a{
-    color: #FFA500;
-}
-header.Sticky ul li a:hover{
-    color: #fff;
-    transition: .5s;
-    
-}
+
 .content{
 	position: absolute;
-	top: 30%;
-	left: 5%;
 	transform: translate(-50);
 }
+
 .content h1{
 	color: #EEF4ED;
 	margin: 20px 0px 20px;
-	font-size: 40px;
+ 	font-size: 40px;
 }
+
 .content h3{
 	color: #EEF4ED;
 	font-size: 20px;
 	margin-bottom: 20px;
 }
+
 .content h4{
 	color: #EEF4ED;
 	letter-spacing: 2px;
 	font-size: 20px;
 }
+
 .newslatter form{
 	width: 190px;
 	max-width: 100%;
@@ -122,24 +129,29 @@ header.Sticky ul li a:hover{
 	border-radius: 30px;
 	transition: .3s;
 }
+
 .newslatter .button-one:hover{
 	background-color: transparent;
 	border: 2px solid #FFAA33;
 	cursor: pointer;
 }
+
 .about{
 	width: 100%;
 	height: 100vh;
 	background-color: #151515;
 }
+
 .about img{
 	height: auto;
 	width: 430px;
 	padding: 0 0 7% 0;
 }
+
 .about-text{
 	width: 550px;
 }
+
 .main{
 	width: 100%;
 	max-width: 100%;
@@ -148,6 +160,7 @@ header.Sticky ul li a:hover{
 	align-items: center;
 	justify-content: space-around;
 }
+
 .about-text h2{
 	color: #EEF4ED;
 	font-size: 50px;
@@ -155,6 +168,7 @@ header.Sticky ul li a:hover{
   font-weight: 500;
 	margin-top: 25%;
 }
+
 .about-text h5{
 	color: #EEF4ED;
 	letter-spacing: 2px;
@@ -162,6 +176,7 @@ header.Sticky ul li a:hover{
 	margin-bottom: 25px;
 	text-transform: capitalize;
 }
+
 .about-text p{
 	color: #FFAA33;
 	letter-spacing: 1px;
@@ -174,6 +189,7 @@ header.Sticky ul li a:hover{
 	display: flex;
 	grid-template-columns: auto auto;
 }
+
 .skills{
 	width: 50%;
 	height: 100vh;
@@ -181,16 +197,19 @@ header.Sticky ul li a:hover{
 	color: #EEF4ED;
 	font-size: 20px
 }
+
 .skills h6{
 	margin-top: 10%;
 	text-align: center;
 	font-size: 40px;
 }
+
 ul li{
 	list-style-type: none;
 	display: inline-block;
 	padding: 5% 25% 3% 10%;
 }
+
 ul li a{
 	font-style: fixed;
 	color: #FF9933;
@@ -198,35 +217,27 @@ ul li a{
 	font-weight: bold;
 	text-transform: capitalize;
 }
+
 .education{
-	width: 50%;
+ 	width: 50%;
 	height: 100vh;
 	background-color: #FFAA33;
 }
+
 .education h6{
-	margin-top: 10%;
 	text-align: center;
 	font-size: 25px;
 }
+
 .education p{
 	font-size: 20px;
 	padding: 2px;
 	margin: 2% 1%;
 	font-weight: bold;
 }
-.experience h6{
-  margin-top: 0;
-}
-*{
-	padding: 0;
-	margin: 0; 
-	font-family: 'Poppins', sans-serif;
-	box-sizing: border-box;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+.experience h4{
+  font-size: 24px;
 }
 
 body,
@@ -430,6 +441,7 @@ textarea.input {
 .contact-info .title {
   color: #151515;
 }
+
 .button-two{
 	background-color: #151515;
 	color: #fff;
@@ -439,12 +451,14 @@ textarea.input {
 	border-radius: 30px;
 	transition: .5s;
 }
+
 .button-two:hover{
 	background-color: transparent;
 	border: 2px solid #151515;
 	color: #151515;
 	cursor: pointer
 }
+
 .text {
   color: #141111;
   margin: 1.5rem 0 2rem 0;
@@ -535,6 +549,28 @@ textarea.input {
   opacity: 0.2;
 }
 
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      padding: 20px;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .hamburger-menu {
+      display: flex;
+  }
+}
+
 @media (max-width: 850px) {
   .form {
     grid-template-columns: 1fr;
@@ -573,7 +609,7 @@ textarea.input {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 850px) {
   .container {
     padding: 1.5rem;
   }
@@ -631,41 +667,6 @@ textarea.input {
 }
 
 
-
-/* Add this CSS inside a media query for screens with a maximum width of 480px (typical for mobile devices) */
-
-@media (max-width: 850px) {
- 
-
-  header .logo {
-    font-size: 25px; 
-  }
-
-  header ul {
-    position: relative;
-    display: flex;
-    top: 10px;
-    left: 0;
-    right: 0;
-    background-color: #151515;
-    opacity: 0;  
-     }
-
-  header.Sticky {
-    padding: 5%;
-    opacity: 1; 
-       
-  }
-  header.Sticky ul {
-    padding-top: 10%;
-     opacity: 1; 
-    pointer-events: auto; 
-  }
- 
-  header ul li {
-      font-size: 10px;
-    }
-
   .banner {
     min-height: 100vh; 
     background-size: cover;
@@ -676,7 +677,7 @@ textarea.input {
   .content {
     text-align: center;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
   }
 
@@ -800,7 +801,7 @@ textarea.input {
   .icon {
     width: 23px;
   }
-}
+
 
 
 
