@@ -12,7 +12,7 @@ body {
 
 header {
   background-color: #333;
-  color: #fff;
+  color: #fafafa;
   padding: 10px 0;
   position: sticky;
   top: 0;
@@ -33,9 +33,9 @@ header .logo{
   text-decoration: none;
   transform: translate(0 0 50% 5%);
 	font-size: 50px;
-	-webkit-text-stroke: .5px #EEF4ED;		
+	-webkit-text-stroke: .5px #fafafa;		
 	color: transparent;
-	background-image: linear-gradient(#EEF4ED, #EEF4ED);
+	background-image: linear-gradient(#fafafa, #fafafa);
 	background-repeat: no-repeat;
 	-webkit-background-clip: text;	
 	background-position: 500px 0;
@@ -61,7 +61,7 @@ span{
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: #fafafa;
   transition: color 0.3s ease;
 }
 
@@ -96,19 +96,19 @@ span{
 }
 
 .content h1{
-	color: #EEF4ED;
+	color: #fafafa;
 	margin: 20px 0px 20px;
  	font-size: 40px;
 }
 
 .content h3{
-	color: #EEF4ED;
+	color: #fafafa;
 	font-size: 20px;
 	margin-bottom: 20px;
 }
 
 .content h4{
-	color: #EEF4ED;
+	color: #fafafa;
 	letter-spacing: 2px;
 	font-size: 20px;
 }
@@ -121,7 +121,7 @@ span{
 
 .newslatter .button-one{
 	background-color: #FFAA33;
-	color: #EEF4ED;
+	color: #fafafa;
 	text-decoration: none;
 	border: 2px solid transparent;
 	font-weight: bold;
@@ -138,8 +138,8 @@ span{
 
 .about{
 	width: 100%;
-	height: 100vh;
-	background-color: #151515;
+	height: 80vh;
+	background-color: #0c0c0c;
 }
 
 .about img{
@@ -147,11 +147,7 @@ span{
 	width: 430px;
 	padding: 0 0 7% 0;
 }
-
-.about-text{
-	width: 550px;
-}
-
+  
 .main{
 	width: 100%;
 	max-width: 100%;
@@ -162,17 +158,13 @@ span{
 }
 
 .about-text h2{
-	color: #EEF4ED;
-	font-size: 50px;
+	color: #fafafa;
 	text-transform: capitalize;
-  font-weight: 500;
-	margin-top: 25%;
-}
+	}
 
 .about-text h5{
-	color: #EEF4ED;
+	color: #fafafa;
 	letter-spacing: 2px;
-	font-size: 22px;
 	margin-bottom: 25px;
 	text-transform: capitalize;
 }
@@ -180,9 +172,8 @@ span{
 .about-text p{
 	color: #FFAA33;
 	letter-spacing: 1px;
-	line-height: 35px;
-	font-size: 25px;
-	margin-bottom: 42%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .container{
@@ -192,9 +183,9 @@ span{
 
 .skills{
 	width: 50%;
-	height: 100vh;
-	background-color: #000000;
-	color: #EEF4ED;
+	height: 70vh;
+	background-color: #0c0c0c;
+	color: #fafafa;
 	font-size: 20px
 }
 
@@ -220,7 +211,7 @@ ul li a{
 
 .education{
  	width: 50%;
-	height: 100vh;
+	height: 180vh;
 	background-color: #FFAA33;
 }
 
@@ -228,6 +219,14 @@ ul li a{
 	text-align: center;
 	font-size: 25px;
 }
+.Project h4 {
+  font-size: 22px;
+  font-weight: bold;
+ }
+
+ .Project h6 a:hover {
+  transform: scale(1.3);
+} 
 
 .education p{
 	font-size: 20px;
@@ -249,9 +248,9 @@ textarea {
 .container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 2rem;
-  background-color: #000;
+  background-color: #0c0c0c;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -314,7 +313,7 @@ form {
 }
 
 .title {
-  color: #fff;
+  color: #fafafa;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
@@ -384,7 +383,7 @@ textarea.input {
 
 .btn:hover {
   background-color: transparent;
-  color: #fff;
+  color: #fafafa;
 }
 
 .input-container span {
@@ -444,7 +443,7 @@ textarea.input {
 
 .button-two{
 	background-color: #151515;
-	color: #fff;
+	color: #fafafa;
 	text-decoration: none;
 	border: 2px solid transparent;
 	padding: 5px 30px;
@@ -503,6 +502,10 @@ textarea.input {
 }
 
 .social-icons a:hover {
+  transform: scale(1.3);
+}
+
+.Project a:hover {
   transform: scale(1.3);
 }
 
@@ -657,10 +660,9 @@ textarea.input {
   }
 }
 .centered{
-	color: #fff;
+	color: #fafafa;
     text-align: center;
     font-weight: 400;
-    padding-bottom: 2%;
 }
 .centered span{
 	color: #ff9500;
